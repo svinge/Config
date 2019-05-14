@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DevTemplate>
+  <Settings>
+    <ZeroAddr>false</ZeroAddr>
+    <DecAddr>true</DecAddr>
+    <DefByteOrder2 />
+    <DefByteOrder4 />
+    <DefByteOrder8 />
+  </Settings>
+  <ElemGroups>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="22" name="Timings&amp;FormattedProcessData">
+      <Elem name="PPM_actual_scaled" type="ushort" byteOrder="" />
+      <Elem name="PPM_avg_scaled" type="ushort" byteOrder="" />
+      <Elem name="T_run_ss" type="ushort" byteOrder="" />
+      <Elem name="T_run_mm" type="ushort" byteOrder="" />
+      <Elem name="T_run_hh" type="ushort" byteOrder="" />
+      <Elem name="T_alarm_ss" type="ushort" byteOrder="" />
+      <Elem name="T_alarm_mm" type="ushort" byteOrder="" />
+      <Elem name="T_alarm_hh" type="ushort" byteOrder="" />
+      <Elem name="T_setup_ss" type="ushort" byteOrder="" />
+      <Elem name="T_setup_mm" type="ushort" byteOrder="" />
+      <Elem name="T_setup_hh" type="ushort" byteOrder="" />
+      <Elem name="T_repair_ss" type="ushort" byteOrder="" />
+      <Elem name="T_repair_mm" type="ushort" byteOrder="" />
+      <Elem name="T_repair_hh" type="ushort" byteOrder="" />
+      <Elem name="T_total_ss" type="ushort" byteOrder="" />
+      <Elem name="T_total_mm" type="ushort" byteOrder="" />
+      <Elem name="T_total_hh" type="ushort" byteOrder="" />
+      <Elem name="T_estimate_ss" type="ushort" byteOrder="" />
+      <Elem name="T_estimate_mm" type="ushort" byteOrder="" />
+      <Elem name="T_estimate_hh" type="ushort" byteOrder="" />
+      <Elem name="Progress_mw" type="ushort" byteOrder="" />
+      <Elem name="Queue_qty" type="ushort" byteOrder="" />
+      <Elem name="T_feed_ss" type="ushort" byteOrder="" />
+      <Elem name="T_feed_mm" type="ushort" byteOrder="" />
+      <Elem name="T_feed_hh" type="ushort" byteOrder="" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="506" name="Timings&amp;TO_queue">
+      <Elem name="PPM_avg_mf" type="float" byteOrder="2301" />
+      <Elem name="T_run" type="float" byteOrder="2301" />
+      <Elem name="T_alarm" type="float" byteOrder="2301" />
+      <Elem name="T_setup" type="float" byteOrder="2301" />
+      <Elem name="T_repair" type="float" byteOrder="2301" />
+      <Elem name="T_total" type="float" byteOrder="2301" />
+      <Elem name="T_estimate" type="float" byteOrder="2301" />
+      <Elem name="Progress_mf" type="float" byteOrder="2301" />
+      <Elem name="T_feed" type="float" byteOrder="2301" />
+      <Elem name="TO_current" type="uint" byteOrder="2301" />
+      <Elem name="TO_new" type="uint" byteOrder="2301" />
+      <Elem name="TO_delete" type="uint" byteOrder="2301" />
+      <Elem name="TO1" type="uint" byteOrder="2301" />
+      <Elem name="TO2" type="uint" byteOrder="2301" />
+      <Elem name="TO3" type="uint" byteOrder="2301" />
+      <Elem name="TO4" type="uint" byteOrder="2301" />
+      <Elem name="TO5" type="uint" byteOrder="2301" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="500" name="User&amp;Status">
+      <Elem name="WS_status" type="ushort" byteOrder="" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="50" name="TO_PRODUCT_QTY">
+      <Elem name="TO_product_qty" type="uint" byteOrder="2301" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="0" name="Counters">
+      <Elem name="Cntr_good_dw" type="uint" byteOrder="2301" />
+      <Elem name="Counter_alarm_dw" type="uint" byteOrder="2301" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="540" name="QualityCheck">
+      <Elem name="QC_request" type="ushort" byteOrder="" />
+      <Elem name="QC_trig_reason" type="ushort" byteOrder="" />
+      <Elem name="QC_new_p1" type="float" byteOrder="2301" />
+      <Elem name="QC_new_p2" type="float" byteOrder="2301" />
+      <Elem name="QC_new_p3" type="float" byteOrder="2301" />
+      <Elem name="QC_new_p4" type="float" byteOrder="2301" />
+      <Elem name="QC_new_p5" type="float" byteOrder="2301" />
+      <Elem name="QC_old_p1" type="float" byteOrder="2301" />
+      <Elem name="QC_old_p2" type="float" byteOrder="2301" />
+      <Elem name="QC_old_p3" type="float" byteOrder="2301" />
+      <Elem name="QC_old_p4" type="float" byteOrder="2301" />
+      <Elem name="QC_old_p5" type="float" byteOrder="2301" />
+      <Elem name="QC_new_data_flag" type="ushort" byteOrder="" />
+      <Elem name="QC_last_ts" type="uint" byteOrder="2301" />
+      <Elem name="QC_last_cjheck_qty" type="uint" byteOrder="2301" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="570" name="RepairReason">
+      <Elem name="Repair_reason" type="ushort" byteOrder="" />
+      <Elem name="UserID" type="ushort" byteOrder="" />
+    </ElemGroup>
+  </ElemGroups>
+  <Cmds>
+    <Cmd tableType="HoldingRegisters" multiple="true" address="526" elemType="uint" elemCnt="2" byteOrder="2301" cmdNum="1" name="TO_SET_NEW" />
+    <Cmd tableType="HoldingRegisters" multiple="true" address="528" elemType="uint" elemCnt="2" byteOrder="2301" cmdNum="2" name="TO_SET_DELETE" />
+  </Cmds>
+</DevTemplate>

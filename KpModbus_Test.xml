@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DevTemplate>
+  <Settings>
+    <ZeroAddr>false</ZeroAddr>
+    <DecAddr>true</DecAddr>
+    <DefByteOrder2 />
+    <DefByteOrder4 />
+    <DefByteOrder8 />
+  </Settings>
+  <ElemGroups>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="0" name="Test1">
+      <Elem name="El1" type="ushort" byteOrder="" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="DiscreteInputs" address="0" name="Test2">
+      <Elem name="El2" />
+    </ElemGroup>
+  </ElemGroups>
+  <Cmds>
+    <Cmd tableType="HoldingRegisters" multiple="false" address="9" byteOrder="" cmdNum="1" name="Coil1" />
+    <Cmd tableType="HoldingRegisters" multiple="false" address="10" byteOrder="" cmdNum="1" name="Coil2" />
+  </Cmds>
+</DevTemplate>
